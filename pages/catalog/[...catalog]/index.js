@@ -8,7 +8,7 @@ import CardList from "../../../components/modules/CardList";
 import {useSelector} from "react-redux";
 import selectCatalogData from "../../../store/catalog/selectors";
 
-export default function catalog() {
+export default function CatalogPage() {
 
     const catalogData = useSelector(selectCatalogData);
 
