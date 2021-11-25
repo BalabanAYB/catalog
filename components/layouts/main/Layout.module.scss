@@ -1,0 +1,15 @@
+.layout {
+  display: flex;
+  position: relative;
+  width: 100%;
+
+  &.mobile {
+    flex-direction: column;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+.rightColumn {
+  width: 100%;
+}
