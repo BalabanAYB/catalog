@@ -12,20 +12,10 @@ export default function Home() {
         <title>Главная</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+        <div>
+            Главная
+        </div>
     </div>
   )
 }
 
-export const getServerSideProps = async (ctx) => {
-    const reduxStore = initializeStore();
-    const { dispatch } = reduxStore;
-
-    const { pathname } = url.parse(ctx.resolvedUrl);
-
-
-    return {
-        props: {
-            initialReduxState: reduxStore.getState(),
-        },
-    };
-};
